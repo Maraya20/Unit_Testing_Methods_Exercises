@@ -14,3 +14,4 @@ public class Email
         return MailAddress.TryCreate(email, out _);
     }
 }
+

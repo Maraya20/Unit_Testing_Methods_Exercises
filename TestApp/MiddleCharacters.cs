@@ -19,11 +19,11 @@ public class MiddleCharacters
 
         if(length % 2 == 0)
         {
-            return input.Substring((length / 2) - 1, 2);
+            return input.Substring((length / 2) - 1, 2); // Maraya -> ra, (substring(start_index, string_length))
         }
-        else
+        else 
         {
-            return input.Substring(length / 2, 1);
+            return input.Substring(length / 2, 1); // Maray -> r
         }
     }
 }

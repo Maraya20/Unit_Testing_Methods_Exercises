@@ -4,7 +4,7 @@ namespace TestApp;
 
 public class PrimeFactor
 {
-    public static long FindLargestPrimeFactor(long number)
+    public static long FindLargestPrimeFactor(long number) //1000
     {
         long largestFactor = 1;
         long divisor = 2;

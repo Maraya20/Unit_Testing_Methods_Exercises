@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Net.Mail;
+using NUnit.Framework;
 
 namespace TestApp.UnitTests;
 
@@ -9,22 +10,45 @@ public class EmailTests
     public void Test_IsValidEmail_ValidEmail()
     {
         // Arrange
-        string validEmail = "test@example.com";
-
+        string Input = "test@example.com";
+        bool expected = true;
         // Act
+        bool actual = Email.IsValidEmail(Input);
 
-        // Assert
+        //Assert
+        Assert.AreEqual(expected, actual);
     }
 
     [Test]
     public void Test_IsValidEmail_InvalidEmail()
     {
-        // TODO: finish test
+        //Arrange
+        string Input = "gggggg.com";
+        bool expected = false;
+
+        //Act
+
+        bool actual = Email.IsValidEmail(Input);
+
+        //Assert
+        Assert.AreEqual(expected, actual);
+
     }
 
     [Test]
     public void Test_IsValidEmail_NullInput()
     {
-        // TODO: finish test
+        //Arrange
+        string Input = "";
+        bool expected = false;
+
+        //Act
+
+        bool actual = Email.IsValidEmail(Input);
+
+        //Assert
+        Assert.AreEqual(expected, actual);
     }
 }
+
+  
