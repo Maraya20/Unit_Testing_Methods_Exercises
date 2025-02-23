@@ -19,7 +19,7 @@ public class EmailTests
     [Test]
     public void Test_IsValidEmail_InvalidEmail()
     {
-        // TODO: finish test baby
+        // TODO: finish test
     }
 
     [Test]
